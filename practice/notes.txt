@@ -1,0 +1,17 @@
+I have access to the:
+
+Nvidia Tesla V100
+- CUDA Cores 5120 Cores
+- Max threads per block 1024
+- 80 Steraming Multiprocessors
+- Maximum threads per multiprocessor 2048
+- Warp size 32 threads
+
+
+A block is a group of threads that execute a kernel (function running on GPU).
+Streaming multiprocessor manages and executes multiple CUDA cores.
+Each SM can mange up to 2048 active threads at a given time
+
+Warps are threads that execute instructions together in lockstep. There are 32 in each. The GPU schedules warps, not threads.
+
+
